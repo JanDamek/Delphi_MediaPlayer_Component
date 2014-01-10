@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{80586C50-6A8F-45E7-AC67-39A5443E0694}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DamekMediaPlayer.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DamekMediaPlayer">
+        <MSBuild Projects="DamekMediaPlayer.dproj"/>
+    </Target>
+    <Target Name="DamekMediaPlayer:Clean">
+        <MSBuild Projects="DamekMediaPlayer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DamekMediaPlayer:Make">
+        <MSBuild Projects="DamekMediaPlayer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DamekMediaPlayer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DamekMediaPlayer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DamekMediaPlayer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/10/29 18:31:19.000.270,=rtl.dcp</Transaction>
+    <Transaction>2013/10/29 18:31:42.000.327,\\psf\Home\Documents\RAD Studio\Projects\Package1.dproj=Z:\Projects\iOS_Android_MediaPlayerStrean\DamekMediaPlayer.dproj</Transaction>
+    <Transaction>2013/10/29 18:32:15.000.329,=Z:\Projects\iOS_Android_MediaPlayerStrean\Fmx.MediaPlayerStream.pas</Transaction>
+    <Transaction>2013/10/29 18:32:30.000.199,=fmx.dcp</Transaction>
+    <Transaction>2013/10/29 18:32:53.000.974,=Z:\Projects\iOS_Android_MediaPlayerStrean\libczDamekPlayer.a</Transaction>
+  </Transactions>
+</BorlandProject>
